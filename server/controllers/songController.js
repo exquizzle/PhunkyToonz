@@ -14,7 +14,6 @@ const filterSongFiles = require('../../utility/filterSongFiles');
 const makeNestedArray = require('../../utility/makeNestedArray');
 
 
-
 songController.validSong = (req, res, next) => {
   res.locals.songList = availableSongs(playlistData);
   return next();
